@@ -1,0 +1,16 @@
+
+/* display:grid;での考え方 */
+
+.container{
+    display: grid;
+    place-items: center;
+    background-image:url(..);
+}
+
+/* display:flex;での考え方 */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

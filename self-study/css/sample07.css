@@ -1,0 +1,36 @@
+.eva {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px 3rem;
+    box-sizing: border-box;
+    background-color: rgb(254, 254, 254);
+}
+
+h2 {
+    position: relative;
+    padding: 1rem 1rem 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 900;
+    font-size: 64px;
+    text-align: center;
+    transform: scaleY(1.5);
+    letter-spacing: -0.1rem
+}
+
+h2::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    height: 100%;
+    font-size: 16px;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    content: attr(data-sub-title);
+    font-size: 24px;
+}

@@ -1,0 +1,51 @@
+.ht {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(254, 254, 254);
+}
+
+.btn-question {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tooltip {
+    position: relative;
+}
+
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.tooltip:hover::before {
+    bottom: 120%;
+    width: 200px;
+    padding: 0.3rem 0.7rem;
+    background-color: #333;
+    line-height: 1.5;
+    content: attr(tooltip-title);
+}
+
+.tooltip:hover::after {
+    bottom: 95%;
+    border: 5px solid transparent;
+    border-top-color: #333;
+    content: '';
+}

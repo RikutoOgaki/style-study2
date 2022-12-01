@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.pic-container {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+a {
+    padding-bottom: 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 104px;
+    transition: 0.8s;
+}
+
+a:hover {
+    text-shadow: -4px -3px 0px #71EDE8, 4px 3px 0px #E94150;
+}

@@ -1,0 +1,36 @@
+/* ホバー時にボタンの背景がスライドして色が変わる↓ */
+
+.tet{
+    width: 180px;
+    height: 70px;
+    background-color: white;
+}
+.btn{
+    background-image: linear-gradient(90deg,
+    #ed6cd5 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 300%;transition: .8s;
+}
+.btn:hover{
+    background-position: 0;
+}
+
+.btm{
+    background-image: linear-gradient(0deg,
+    transparent 0 50%, rgb(0, 170, 170) 50%);
+    background-position: 100% 100%;
+    background-size: 100% 300%; transition: .8s;
+}
+.btm:hover{
+    background-position: 100% 0;
+}
+
+.btl{
+    background-image: linear-gradient(135deg,
+    #2afa76 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 300%; transition: .8s;
+}
+.btl:hover{
+    background-position: 0;
+}
